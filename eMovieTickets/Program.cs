@@ -1,6 +1,11 @@
+using eMovieTickets.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//Db Context confguratoin
+builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
