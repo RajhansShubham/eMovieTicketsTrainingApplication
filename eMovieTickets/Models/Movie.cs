@@ -1,5 +1,6 @@
 ﻿using eMovieTickets.Utility;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace eMovieTickets.Models
 {
@@ -34,14 +35,14 @@ namespace eMovieTickets.Models
         //Cinema realtion
         public int CinemaId { get; set; }
 
-        [ForeignKey("CinemaId")]
+        [ForeignKey("Cinema_Id")]
         public Cinemas Cinema { get; set; }
 
         //Producer Relations
         public int ProducerId { get; set; }
 
-        [ForeignKey("ProducerId")]
-        public Producer Producer { get; set; }
+        [ForeignKey("Producer_Id")]
+            public Producer Producer { get; set; }
 
     }       
 }

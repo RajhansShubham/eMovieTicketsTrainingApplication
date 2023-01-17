@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection.Metadata.Ecma335;
 
 namespace eMovieTickets.Models
@@ -14,7 +15,7 @@ namespace eMovieTickets.Models
 
         public string Description { get; set; }
 
-
+        [NotMapped]
         //Relationship
         public List<Movie> Movies { get; set; }
     }
