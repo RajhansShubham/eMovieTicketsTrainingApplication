@@ -26,6 +26,8 @@ namespace eMovieTickets.Data
 
         public DbSet<Actor> Actors { get; set; }
 
+        public DbSet<Movie> Movies { get; set; } 
+
 
 
         public DbSet<Actors_Movie> Actors_Movies { get; set; }
